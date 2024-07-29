@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha de Visualização</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .button-container button {
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button-container button.professor {
+            background-color: #007bff;
+            color: white;
+        }
+        .button-container button.aluno {
+            background-color: #28a745;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <h2>Escolha o tipo de visualização</h2>
+        <button class="professor" onclick="location.href='avaliacao.html'">Avaliação</button>
+        <button class="aluno" onclick="location.href='procura.php'">Retorno da Avaliação</button>
+    </div>
+</body>
+</html>
